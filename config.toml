@@ -1,0 +1,19 @@
+theme = "catppuccin_latte"
+
+[editor]
+color-modes = true
+idle-timeout = 0
+completion-trigger-len = 1
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
