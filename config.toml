@@ -4,6 +4,7 @@ theme = "catppuccin_latte"
 color-modes = true
 idle-timeout = 0
 completion-trigger-len = 1
+bufferline = "always"
 
 [editor.statusline]
 left = ["mode", "spinner"]
