@@ -103,6 +103,7 @@ scheme.tab_bar.active_tab.bg_color = scheme.tab_bar.inactive_tab.bg_color
 scheme.tab_bar.inactive_tab.bg_color = bg
 
 return {
+  default_prog = { 'C:/Program Files/PowerShell/7/pwsh.exe' }, -- IMPORTANT, CHANGE SHELL HERE
   font = wezterm.font('scientifica', { weight = "Medium" }),
   font_size = 16,
   default_cursor_style = "BlinkingBlock",
