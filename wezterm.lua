@@ -102,7 +102,7 @@ wezterm.on(
 return {
   -- default_prog = { 'C:/Program Files/Git/bin/bash.exe' }, -- IMPORTANT, CHANGE SHELL HERE
   font = wezterm.font('scientifica', { weight = "Medium" }),
-  font_size = 24,
+  font_size = 22,
   default_cursor_style = "BlinkingBlock",
   cursor_blink_rate = 600,
   animation_fps = 240,
