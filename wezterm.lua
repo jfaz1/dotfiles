@@ -90,9 +90,11 @@ table.insert(mykeys, {
 wezterm.on(
   'format-tab-title',
   function(tab, tabs, panes, config, hover, max_width)
-    local title = wezterm.truncate_right(tab.active_pane.title, max_width - 2)
+    local title = wezterm.truncate_right(tab.active_pane.title, 30)
+    if string.len(title) == 30 then title = title .. '..' end
+    if title == 'bash.exe' or title == 'zsh.exe' then title = '' end
     return {
-      { Text = ' [F' .. tab.tab_index + 1 .. '] ' .. tab.active_pane.title .. ' ' },
+      { Text = ' [F' .. tab.tab_index + 1 .. '] ' .. title .. ' ' },
     }
   end
 )
@@ -103,7 +105,7 @@ scheme.tab_bar.active_tab.bg_color = scheme.tab_bar.inactive_tab.bg_color
 scheme.tab_bar.inactive_tab.bg_color = bg
 
 return {
-  default_prog = { 'C:/Program Files/PowerShell/7/pwsh.exe' }, -- IMPORTANT, CHANGE SHELL HERE
+  default_prog = { 'C:/Program Files/Git/bin/bash.exe' }, -- IMPORTANT, CHANGE SHELL HERE
   font = wezterm.font('scientifica', { weight = "Medium" }),
   font_size = 16,
   default_cursor_style = "BlinkingBlock",
