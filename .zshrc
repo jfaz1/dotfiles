@@ -19,17 +19,28 @@ source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
 # Set terminal tab title
 function preexec () {
+  window_title=""
   process_name="$1"
-  if [ ${process_name:0:2} = "hx" ]; then
+  if [ "$process_name" = "hx" ] || [ "$process_name" = "hx ." ]
+  then
     process_name="hx"
+  elif [ ${process_name:0:2} = "hx" ]
+  then
+    window_title="\033]0;$process_name\007"
   fi
-  window_title="\033]0;$process_name → ${PWD##*/}\007"
+
+  if [ -z "$window_title" ]
+  then
+    parent_dir=$(basename ${PWD%/*})
+    window_title="\033]0;$process_name → $parent_dir/${PWD##*/}\007"
+  fi
+
   print -Pn "$window_title"
 }
 
 function precmd () {
-  $() # this makes it refresh the first time for some reason
-  window_title="\033]0;${PWD##*/}\007"
+  parent_dir=$(basename ${PWD%/*})
+  window_title="\033]0;$parent_dir/${PWD##*/}\007"
   print -Pn "$window_title"
 }
 

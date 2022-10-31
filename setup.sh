@@ -11,10 +11,10 @@ rm -f ~/.p10k.zsh
 rm -f ~/.bashrc
 
 # Create new symlinks
-ln -f ./wezterm.lua ~/.config/wezterm/wezterm.lua
-ln -f ./.zshrc ~/.zshrc
-ln -f ./.p10k.zsh ~/.p10k.zsh
-ln -f ./.bashrc ~/.bashrc
+ln -f wezterm.lua ~/.config/wezterm/wezterm.lua
+ln -f .zshrc ~/.zshrc
+ln -f .p10k.zsh ~/.p10k.zsh
+ln -f .bashrc ~/.bashrc
 
 # Create new custom configs
 touch ~/.user_zshrc
