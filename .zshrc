@@ -23,13 +23,13 @@ function preexec () {
   if [ ${process_name:0:2} = "hx" ]; then
     process_name="hx"
   fi
-  window_title="\e]0;$process_name > %~\a"
+  window_title="\033]0;$process_name → ${PWD##*/}\007"
   print -Pn "$window_title"
 }
 
 function precmd () {
   $() # this makes it refresh the first time for some reason
-  window_title="\033]0;%~\007"
+  window_title="\033]0;${PWD##*/}\007"
   print -Pn "$window_title"
 }
 
