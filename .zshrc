@@ -7,7 +7,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/c/Users/josef/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -43,5 +43,8 @@ function precmd () {
   window_title="\033]0;$parent_dir/${PWD##*/}\007"
   print -Pn "$window_title"
 }
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 source ~/.user_zshrc

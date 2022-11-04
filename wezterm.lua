@@ -99,13 +99,8 @@ wezterm.on(
   end
 )
 
-local scheme = wezterm.color.get_builtin_schemes()['Catppuccin Latte']
-local bg = scheme.tab_bar.active_tab.bg_color
-scheme.tab_bar.active_tab.bg_color = scheme.tab_bar.inactive_tab.bg_color
-scheme.tab_bar.inactive_tab.bg_color = bg
-
 return {
-  default_prog = { 'C:/Program Files/Git/bin/bash.exe' }, -- IMPORTANT, CHANGE SHELL HERE
+  -- default_prog = { 'C:/Program Files/Git/bin/bash.exe' }, -- IMPORTANT, CHANGE SHELL HERE
   font = wezterm.font('scientifica', { weight = "Medium" }),
   font_size = 16,
   default_cursor_style = "BlinkingBlock",
@@ -121,10 +116,7 @@ return {
   keys = mykeys,
   window_decorations = "RESIZE",
   pane_focus_follows_mouse = true,
-  color_schemes = {
-    ['Catppuccin Latte'] = scheme,
-  },
-  color_scheme = "Catppuccin Latte",
+  color_scheme = "Catppuccin Macchiato",
   use_fancy_tab_bar = false,
   tab_max_width = 64,
 }
