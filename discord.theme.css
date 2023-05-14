@@ -9,7 +9,6 @@
  * @BDEditor Clear Vision
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;700&display=swap');
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
@@ -64,7 +63,7 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: IBM Plex Sans;
+  --main-font: 3270 Nerd Font Mono SemCond;
   --code-font: Consolas;
   --channels-width: 220px;
   --members-width: 240px;
