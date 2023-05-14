@@ -63,9 +63,8 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: A-OTF Shin Go Pro, L;
+  --main-font: A-OTF Shin Go Pro, EL;
   --code-font: Consolas;
-  --chat-font-size: 8px;
   --channels-width: 220px;
   --members-width: 240px;
   --backdrop-overlay: rgba(0,0,0,0.8);
