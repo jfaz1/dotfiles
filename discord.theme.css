@@ -1,5 +1,5 @@
 /**
- * @name meliora
+ * @name discord
  * @author ClearVision Team
  * @version 6.3.0
  * @description Highly customizable and beautiful theme for BetterDiscord.
@@ -9,6 +9,7 @@
  * @BDEditor Clear Vision
 */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;700&display=swap');
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
@@ -18,7 +19,7 @@
   --danger-color: #982929;
   --url-color: var(--main-color);
   --background-image: transparent;
-  --background-shading: 50%;
+  --background-shading: 100%;
   --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
@@ -63,7 +64,7 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: gg sans;
+  --main-font: IBM Plex Sans;
   --code-font: Consolas;
   --channels-width: 220px;
   --members-width: 240px;
