@@ -1,0 +1,24 @@
+theme = "jfaz"
+
+[editor]
+color-modes = true
+idle-timeout = 0
+completion-trigger-len = 1
+bufferline = "always"
+line-number = "relative"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"

@@ -1,0 +1,19 @@
+inherits = "meliora"
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+
+# "ui.bufferline.background" = { bg = "light_black" }
+# "ui.gutter.selected" = { bg = "black", fg = "red" }
+# "ui.gutter" = { bg = "black" }
+# "ui.linenr" = { bg = "black" }
+# "ui.linenr.selected" = { bg = "black" }
+
+"ui.background" = {}
+"ui.bufferline.background" = {}
+"ui.bufferline" = {}
+"ui.bufferline.active" = { fg = "light_black", bg = "red"}
+"ui.gutter.selected" = {}
+"ui.gutter" = {}
+"ui.statusline" = {}
+"ui.linenr" = {}
+"ui.linenr.selected" = {}

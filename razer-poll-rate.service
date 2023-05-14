@@ -1,0 +1,11 @@
+[Unit]
+Description=Sets polling rate to 1000hz
+
+[Service]
+Type=oneshot
+RemainAfterExit=false
+ExecStart=polychromatic-cli -o poll_rate -p poll_high
+
+[Install]
+WantedBy=default.target
+
