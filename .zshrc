@@ -54,7 +54,5 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
-export PATH=~/.local/bin:$PATH
-
 source ~/.user_zshrc
 export PATH="$HOME/.local/bin/:$PATH"
