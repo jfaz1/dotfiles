@@ -1,24 +1,15 @@
-/**
- * @name discord
- * @author ClearVision Team
- * @version 6.3.0
- * @description Highly customizable and beautiful theme for BetterDiscord.
- * @source https://github.com/ClearVision/ClearVision-v6
- * @website https://clearvision.github.io
- * @invite 7pNUC9C
- * @BDEditor Clear Vision
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;300;400;500;700&display=swap');
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
-  --main-color: #D49191;
-  --hover-color: #CDAB89;
+  --main-color: #D98F00;
+  --hover-color: #B77900;
   --success-color: #43b581;
   --danger-color: #982929;
   --url-color: var(--main-color);
   --background-image: transparent;
-  --background-shading: 100%;
+  --background-shading: 0%;
   --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
@@ -29,7 +20,7 @@
   --background-grayscale: 0%;
   --background-invert: 0%;
   --background-blur: 0px;
-  --background-overlay: rgb(28,25,23,1);
+  --background-overlay: rgb(29,32,33,1);
   --user-popout-image: url('https://clearvision.github.io/images/sapphire.jpg');
   --user-popout-position: center;
   --user-popout-size: cover;
@@ -63,11 +54,11 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: A-OTF Shin Go Pro, EL;
-  --code-font: Consolas;
+  --main-font: Nunito;
+  --code-font: Fira Code;
   --channels-width: 220px;
   --members-width: 240px;
-  --backdrop-overlay: rgba(0,0,0,0.9);
+  --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
   --backdrop-size: var(--background-size);
